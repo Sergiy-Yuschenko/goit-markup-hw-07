@@ -1,10 +1,25 @@
     /* ============== HEADER ============== */
+.header {
+    &  > .container {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 
-.header > .container {
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    .logo {
+        margin-right: 93px;
+    }
+
+    .address-list-link {
+        display: flex;
+        align-items: center;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
+
 
 .site-nav {
     display: flex;
@@ -15,23 +30,10 @@
     display: flex;
 }
 
-.header .logo {
-    margin-right: 93px;
-}
-
 .address-list-header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.header .address-list-link {
-    display: flex;
-    align-items: center;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-icon {
@@ -41,11 +43,11 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header .address-list-link:hover .address-list-icon,
-.header .address-list-link:focus .address-list-icon {
-    fill: var(--accent-color);
+    .header .address-list-link:hover &,
+    .header .address-list-link:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 .mail-icon{
@@ -92,7 +94,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
-    letter-spacing: 0.02em;      
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }      
 }
 
 .navigation-list-link{
@@ -101,29 +108,22 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.address-list-link:hover,
-.address-list-link:focus {
-     color: var(--accent-color);
-}
-
-.navigation-list-link.active {
-    color: var(--accent-color);
-}
-
-.navigation-list-link.active::after {
-    content: ""; 
-    width: auto;
-    height: 4px;
-    display: block;
-    background: var(--accent-color);
-    border-radius: 2px;
-
-    position:relative;
-    top: 30px;
+    &.active {
+        color: var(--accent-color);
+        
+        &::after {
+            content: ""; 
+            width: auto;
+            height: 4px;
+            display: block;
+            background: var(--accent-color);
+            border-radius: 2px;
+        
+            position:relative;
+            top: 30px;
+        }
+    }
 }
 
 /* ============== END HEADER ============== */

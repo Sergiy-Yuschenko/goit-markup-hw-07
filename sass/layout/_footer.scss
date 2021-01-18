@@ -2,22 +2,23 @@
 
 .footer {
     background-color: var(--backgr-color-first);
+
+    &> .container {
+        align-items: flex-start;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .logo {
+        display: block;
+       margin-bottom: 20px;
+    }
+
+    .addres-list-item:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 
-.footer > .container {
-    align-items: flex-start;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.footer .logo {
-    display: block;
-   margin-bottom: 20px;
-}
-
-.footer .addres-list-item:not(:last-child) {
-    margin-bottom: 9px;
-}
 
 .logo-second-dark {
     color: var(--main-color-dark-backgr);
@@ -51,10 +52,10 @@
 
 .dark-social {
     background: var(--social-link-background-dark);
-}
 
-.dark-social .social-list-icon {
-    fill: var(--main-color-dark-backgr)
+    .social-list-icon {
+        fill: var(--main-color-dark-backgr)
+    }
 }
 
 .subscription-form {

@@ -12,10 +12,10 @@
     padding: 3px;
     font-size: 14px;
     letter-spacing: 0.03em;
-}
 
-.advantages-list-item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .advantages-icon-background {

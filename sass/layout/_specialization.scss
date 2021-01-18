@@ -11,10 +11,10 @@
 
 .specialization-list-item {
     position: relative;
-}
 
-.specialization-list-item:not(:last-child) {
-    margin-right: var(--card-set-specialization);
+    &:not(:last-child) {
+        margin-right: var(--card-set-specialization);
+    }
 }
 
 .specialization-title,
