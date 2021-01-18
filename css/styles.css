@@ -174,6 +174,8 @@ img {
         margin-left: auto;     
 }
 
+ /*-- _logo.scss part 1--*/
+
 .logo {
         color: var(--logo-color);
         font-family: var(--secondary-font);
@@ -186,6 +188,8 @@ img {
 .logo-first {
         color: var(--accent-color);
 }
+
+ /*-- _logo.scss part 1 END --*/
 
 .navigation-list-link,
 .address-list-link {
@@ -597,18 +601,26 @@ padding: 27px 0;
         padding-bottom: 60px;
 }
 
+
+
 .footer .logo {
         display: block;
        margin-bottom: 20px;
 }
 
+
+
 .footer .addres-list-item:not(:last-child) {
         margin-bottom: 9px;
 }
 
+ /*-- _logo.scss part 2--*/
+
 .logo-second-dark {
         color: var(--main-color-dark-backgr);
 }
+
+ /*-- _logo.scss part 2 END --*/
 
 .address-footer-link {
         font-weight: 400;

@@ -351,6 +351,23 @@ img {
   fill: var(--main-color-dark-backgr);
 }
 
+.logo {
+  color: var(--logo-color);
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.logo-first {
+  color: var(--accent-color);
+}
+
+.logo-second.dark {
+  color: var(--main-color-dark-backgr);
+}
+
 /* ============== HEADER ============== */
 .header > .container {
   display: flex;
@@ -423,19 +440,6 @@ img {
 
 .header .address {
   margin-left: auto;
-}
-
-.logo {
-  color: var(--logo-color);
-  font-family: var(--secondary-font);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-}
-
-.logo-first {
-  color: var(--accent-color);
 }
 
 .navigation-list-link,
@@ -765,10 +769,6 @@ img {
 
 .footer .addres-list-item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.logo-second-dark {
-  color: var(--main-color-dark-backgr);
 }
 
 .address-footer-link {
