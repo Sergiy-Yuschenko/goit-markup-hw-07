@@ -1,0 +1,112 @@
+/* ============== FOOTER ============== */
+
+.footer {
+    background-color: var(--backgr-color-first);
+}
+
+.footer > .container {
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .logo {
+    display: block;
+   margin-bottom: 20px;
+}
+
+.footer .addres-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.logo-second-dark {
+    color: var(--main-color-dark-backgr);
+}
+
+.address-footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--addres-second-color);
+}
+
+.location {
+    color: var(--main-color-dark-backgr);
+}
+
+.social-list-our-projekt {
+    margin-left: 70px;  
+}
+
+.social-list-invitation  {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--main-color-dark-backgr);
+    margin-bottom: 20px;
+}
+
+.dark-social {
+    background: var(--social-link-background-dark);
+}
+
+.dark-social .social-list-icon {
+    fill: var(--main-color-dark-backgr)
+}
+
+.subscription-form {
+    margin-left: 93px;
+
+}
+
+.subscription-form-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color-dark-backgr);
+    margin-bottom: 20px;
+}
+
+.subscription-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: transparent;
+    padding-left: 16px;
+}
+
+.subscription-form-field {
+    display: inline-block;
+}
+
+.subscription-form-button {
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    padding: 10px 29px;
+    margin-left: 12px;
+    background: var(--accent-color);
+    border-radius: 4px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-color-dark-backgr);
+}
+
+.sibscription-form-button-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--main-color-dark-backgr);
+    margin-left: 10px;
+}
+
+/* ============== FOOTER END ============== */

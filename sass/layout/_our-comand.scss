@@ -1,0 +1,97 @@
+ /* ============== OUR COMAND ============== */
+.our-command-section {
+    background-color: var(--backgr-color-second);
+}
+
+.our-command-section > .container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    flex-direction: column;
+}
+
+.our-command-list {
+      display: flex;
+      justify-content: center;
+}
+
+.our-command-list-item {
+    background-color: var(--main-color-dark-backgr);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.our-command-list-item:not(:last-child) {
+    margin-right: var(--card-set-our-command);
+}
+
+.our-command-card-content {
+    padding: 30px 10px;
+}
+
+.our-command-title {
+    margin-bottom:50px;
+}
+
+.our-specialist-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+.our-specialist-specialization {
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.our-specialist-name,
+.our-specialist-specialization {
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--social-link-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--main-color-dark-backgr);
+}
+
+/* ============== OUR COMAND END ============== */

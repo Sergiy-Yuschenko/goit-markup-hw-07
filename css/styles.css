@@ -1,3 +1,4 @@
+/*-- variables.scss --*/
 :root {
     --accent-color: #2196F3; /*( частина логотипу,hover по посиланнях тобто акцент)*/
     --logo-color: #000000; /*частина логотипу (світлий фон)*/
@@ -16,7 +17,23 @@
     --card-set-our-command: 30px; /*Відстань між карточками блоку "Наша команда"*/
     --card-set-portfolio: 30px; /*Відстань між карточками блоку */
 }
+/*-- variables.scss END--*/
+/*-- visualy-hidden.scss --*/
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+/*-- visualy-hidden.scss END --*/
 
+/*-- common.scss --*/
 body {
          color: var(--main-color);
         font-family: var(--main-font);
@@ -38,19 +55,6 @@ body {
         border: 0;
         border-radius: 4px;
 }
-
-.visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-      }
 
 h1,
 h2,
@@ -77,17 +81,24 @@ img {
         height: auto;
 }
 
+.address {
+        font-style: normal;
+}
+    /*-- _common.scss END --*/
+
+    /*-- _container.scss --*/
 .container {
         width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
         display: flex;
-        /*justify-content: center;*/
         align-items: center;
         background: transparent;
 }
+    /*-- _container.scss END --*/
 
-/* ============== HEADER ============== */
+    /*-- _header.scss --*/
+    /* ============== HEADER ============== */
 
 .header > .container {
         display: flex;
@@ -106,10 +117,6 @@ img {
 
 .header .logo {
         margin-right: 93px;
-}
-
-.address {
-        font-style: normal;
 }
 
 .address-list-header {
@@ -227,10 +234,12 @@ img {
         top: 30px;
 }
 
-
 /* ============== END HEADER ============== */
+    /*-- _header.scss END--*/
 
+    /*-- _hero.scss --*/
 /* ============== HERO SECTION ============== */
+
 
 .hero-section > .container {
         /*background-color: var(--backgr-color-first);*/
@@ -271,8 +280,11 @@ img {
 }
 
 /* ============== HERO SECTION END ============== */
+    /*-- _header.scss END --*/
 
+/*-- _advantages.scss --*/
 /* ============== ADVANTAGES SECTION ============== */
+
 .advantages > .container {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -320,8 +332,11 @@ img {
 }
 
 /* ============== ADVANTAGES SECTION END ============== */
+/*-- _advantages.scss END --*/
 
+/*-- _specialization.scss --*/
 /* ============== SPECIALIZATION SECTION ============== */
+
 
 .specialization-section > .container {
         flex-direction: column;
@@ -371,10 +386,13 @@ position: absolute;
 bottom: 0px;
 padding: 27px 0;
 }
- 
-/* ============== SPECIALIZATION SECTION END ============== */
 
-/* ============== OUR COMAND ============== */
+/* ============== SPECIALIZATION SECTION END ============== */
+ /*-- _specialization.scss END --*/
+
+ /*-- _our-comand.scss --*/
+ /* ============== OUR COMAND ============== */
+
 
 .our-command-section {
         background-color: var(--backgr-color-second);
@@ -472,8 +490,11 @@ padding: 27px 0;
 }
 
 /* ============== OUR COMAND END ============== */
+ /*-- _our-comand.scss END --*/
 
-/* ============== OUR CLIENTS END ============== */
+  /*-- _our-clients.scss --*/
+/* ============== OUR CLIENTS ============== */
+
 
 .our-clients-section > .container {
         flex-direction: column;
@@ -557,11 +578,12 @@ padding: 27px 0;
         height: 45.44px;
 }
 
-
-
 /* ============== OUR CLIENTS END ============== */
+ /*-- _our-clients.scss END --*/
 
+  /*-- _footer.scss --*/
 /* ============== FOOTER ============== */
+
 .footer {
         background-color: var(--backgr-color-first);
 }
@@ -672,8 +694,11 @@ padding: 27px 0;
 }
 
 /* ============== FOOTER END ============== */
+ /*-- _footer.scss END --*/
 
+ /*-- _portfolio.scss --*/
 /* ============== PORTFOLIO.HTML ============== */
+
 .portfolio-section .container {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -713,14 +738,6 @@ padding: 27px 0;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*.portfolio-description {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.556;
-        letter-spacing: 0.03em;
-        color: var(--main-color-dark-backgr);
-        background-color: var(--accent-color);
-} */
 .portfolio-list {
         display: flex;
         justify-content: center;
@@ -808,8 +825,11 @@ padding: 27px 0;
 }
 
 /* ============== PORTFOLIO.HTML END ============== */
+ /*-- _portfolio.scss END --*/
 
+ /*-- _bckdrop.scss --*/
 /* ============== BACKDROP ============== */
+
 .backdrop {
         position: fixed;
         left: 0;
@@ -1028,4 +1048,5 @@ padding: 27px 0;
 }
 
 /* ============== BACKDROP END ============== */
+ /*-- _bckdrop.scss END --*/
 

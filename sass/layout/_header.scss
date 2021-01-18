@@ -1,0 +1,129 @@
+    /* ============== HEADER ============== */
+
+.header > .container {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.header .logo {
+    margin-right: 93px;
+}
+
+.address-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .address-list-link {
+    display: flex;
+    align-items: center;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list-icon {
+    display: block;
+    fill: var(--main-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header .address-list-link:hover .address-list-icon,
+.header .address-list-link:focus .address-list-icon {
+    fill: var(--accent-color);
+}
+
+.mail-icon{
+    width: 16px;
+    height: 12px;
+}
+
+.phone-icon{
+    width: 10px;
+    height: 16px;
+}
+
+.address-list-text {
+    display: block;
+    padding-left: 10px;
+}
+
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+.header .address-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header .address {
+    margin-left: auto;     
+}
+
+.logo {
+    color: var(--logo-color);
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+}
+
+.logo-first {
+    color: var(--accent-color);
+}
+
+.navigation-list-link,
+.address-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;      
+}
+
+.navigation-list-link{
+    color: var(--heading-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.address-list-link:hover,
+.address-list-link:focus {
+     color: var(--accent-color);
+}
+
+.navigation-list-link.active {
+    color: var(--accent-color);
+}
+
+.navigation-list-link.active::after {
+    content: ""; 
+    width: auto;
+    height: 4px;
+    display: block;
+    background: var(--accent-color);
+    border-radius: 2px;
+
+    position:relative;
+    top: 30px;
+}
+
+/* ============== END HEADER ============== */
