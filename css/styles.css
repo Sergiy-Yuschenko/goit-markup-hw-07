@@ -446,6 +446,9 @@ padding: 27px 0;
         letter-spacing: 0.03em;
 }
 
+ /*-- _our-comand.scss END --*/
+
+  /*-- _social-list.scss --*/
 .social-list {
         display: flex;
         justify-content: center;
@@ -489,8 +492,8 @@ padding: 27px 0;
         fill: var(--main-color-dark-backgr);
 }
 
+  /*-- _social-list.scss END --*/
 /* ============== OUR COMAND END ============== */
- /*-- _our-comand.scss END --*/
 
   /*-- _our-clients.scss --*/
 /* ============== OUR CLIENTS ============== */
