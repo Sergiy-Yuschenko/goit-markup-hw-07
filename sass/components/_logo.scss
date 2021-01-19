@@ -1,11 +1,9 @@
+/* ============== LOGO component ============== */
 
 .logo {
     color: var(--logo-color);
     font-family: var(--secondary-font);
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
+    @include font(700, 26px, 1.192, 0.03em);
 }
 
 .logo-first {
@@ -15,3 +13,5 @@
 .logo-second.dark {
     color: var(--main-color-dark-backgr);
 }
+
+/* ============== LOGO END component ============== */

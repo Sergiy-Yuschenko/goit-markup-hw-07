@@ -101,6 +101,7 @@ img {
   background: transparent;
 }
 
+/* ============== BUTTON component ============== */
 .button {
   display: inline-flex;
   align-items: center;
@@ -119,7 +120,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  /*text-align: center;*/
   letter-spacing: 0.06em;
   color: var(--main-color-dark-backgr);
 }
@@ -131,10 +131,12 @@ img {
   margin-left: 10px;
 }
 
+/* ============== BACKDROP component END ============== */
+/* ============== LOGO component ============== */
 .logo {
   color: var(--logo-color);
   font-family: var(--secondary-font);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -148,6 +150,8 @@ img {
   color: var(--main-color-dark-backgr);
 }
 
+/* ============== LOGO END component ============== */
+/* ============== SOCIAL-LIST component ============== */
 .social-list {
   display: flex;
   justify-content: center;
@@ -188,7 +192,8 @@ img {
   fill: var(--main-color-dark-backgr);
 }
 
-/* ============== BACKDROP ============== */
+/* ============== SOCIAL-LIST  component END ============== */
+/* ============== BACKDROP component ============== */
 .backdrop {
   position: fixed;
   left: 0;
@@ -256,7 +261,6 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--heading-color);
   margin-bottom: 12px;
@@ -271,8 +275,8 @@ img {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
+  line-height: 1.67;
+  letter-spacing: 0.1em;
 }
 
 .modal-form-input-wrapper {
@@ -380,7 +384,7 @@ img {
   margin-right: auto;
 }
 
-/* ============== BACKDROP END ============== */
+/* ============== BACKDROP component END ============== */
 /* ============== HEADER ============== */
 .header > .container {
   display: flex;
@@ -507,8 +511,8 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--main-color-dark-backgr);
   margin-bottom: 30px;
@@ -558,12 +562,14 @@ img {
   line-height: 1.142;
   text-transform: uppercase;
   color: var(--heading-color);
+  /*@include font($font-weight, $font-size, $line-height, $letter-spacing, $color)*/
   margin-bottom: 10px;
 }
 
 .advantages-description {
   font-weight: 400;
   line-height: 1.714;
+  /*@include font($font-weight, $font-size, $line-height, $letter-spacing, $color)*/
 }
 
 /* ============== ADVANTAGES SECTION END ============== */
@@ -589,10 +595,10 @@ img {
 .specialization-title,
 .our-command-title,
 .our-clients-title {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--heading-color);
 }
@@ -602,12 +608,11 @@ img {
 }
 
 .specialization-name {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--main-color-dark-backgr);
   width: 370px;
@@ -655,20 +660,20 @@ img {
 .our-specialist-name {
   margin-bottom: 10px;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--heading-color);
 }
 
 .our-specialist-specialization {
-  font-weight: 400;
   margin-bottom: 16px;
-}
-
-.our-specialist-name,
-.our-specialist-specialization {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* ============== OUR COMAND END ============== */
@@ -792,8 +797,8 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--main-color-dark-backgr);
   margin-bottom: 20px;
 }
@@ -834,9 +839,9 @@ img {
 }
 
 .subscription-form-input::placeholder {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }

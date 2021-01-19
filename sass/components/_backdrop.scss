@@ -1,4 +1,5 @@
-/* ============== BACKDROP ============== */
+/* ============== BACKDROP component ============== */
+
 .backdrop {
     position: fixed;
     left: 0;
@@ -67,12 +68,8 @@
 }
 
 .form-invitation {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--heading-color); 
+    @include font(700, 20px, 1.15, 0.03em);
+    color: var(--heading-color);
 
     margin-bottom: 12px;
 }
@@ -85,10 +82,7 @@
 .modal-form-field {
     margin-bottom: 20px;
 
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.167;
-    letter-spacing: 0.01em;
+    @include font(400, 12px, 1.67, 0.1em);
 }
 
 .modal-form-input-wrapper{
@@ -147,10 +141,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
     &::placeholder {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.143;
-        letter-spacing: 0.01em;
+        @include font(400, 14px, 1.143, 0.01em);
         color: rgba(117, 117, 117, 0.5);
     }
 
@@ -164,11 +155,10 @@
     width: 423px;
     margin-left: auto;
     margin-right:auto;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
+
+    @include font(400, 14px, 1.714, 0.03em);
     white-space: pre;
+
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -200,4 +190,4 @@
     margin-right: auto;
 }
 
-/* ============== BACKDROP END ============== */
+/* ============== BACKDROP component END ============== */

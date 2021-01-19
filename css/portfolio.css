@@ -101,6 +101,7 @@ img {
   background: transparent;
 }
 
+/* ============== BUTTON component ============== */
 .button {
   display: inline-flex;
   align-items: center;
@@ -119,7 +120,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  /*text-align: center;*/
   letter-spacing: 0.06em;
   color: var(--main-color-dark-backgr);
 }
@@ -131,10 +131,12 @@ img {
   margin-left: 10px;
 }
 
+/* ============== BACKDROP component END ============== */
+/* ============== LOGO component ============== */
 .logo {
   color: var(--logo-color);
   font-family: var(--secondary-font);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -148,6 +150,8 @@ img {
   color: var(--main-color-dark-backgr);
 }
 
+/* ============== LOGO END component ============== */
+/* ============== SOCIAL-LIST component ============== */
 .social-list {
   display: flex;
   justify-content: center;
@@ -188,6 +192,7 @@ img {
   fill: var(--main-color-dark-backgr);
 }
 
+/* ============== SOCIAL-LIST  component END ============== */
 /* ============== HEADER ============== */
 .header > .container {
   display: flex;
@@ -320,7 +325,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  text-align: center;
   letter-spacing: 0.03em;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
@@ -457,8 +461,8 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--main-color-dark-backgr);
   margin-bottom: 20px;
 }
@@ -499,9 +503,9 @@ img {
 }
 
 .subscription-form-input::placeholder {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }

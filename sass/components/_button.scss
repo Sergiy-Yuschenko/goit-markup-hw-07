@@ -1,3 +1,5 @@
+/* ============== BUTTON component ============== */
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -14,11 +16,7 @@
     cursor: pointer;
 
     font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    /*text-align: center;*/
-    letter-spacing: 0.06em;
+    @include font(700, 16px, 1.875, 0.06em);
     color: var(--main-color-dark-backgr);
 
     .icon {
@@ -29,3 +27,4 @@
     }
 }
 
+/* ============== BACKDROP component END ============== */

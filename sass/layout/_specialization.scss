@@ -20,11 +20,8 @@
 .specialization-title,
 .our-command-title,
 .our-clients-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
     text-align: center;
-    letter-spacing: 0.03em;
+    @include font(700, 36px, 1.167, 0.03em);
     color: var(--heading-color);
 }
 
@@ -33,12 +30,8 @@
 }
 
 .specialization-name {
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.143;
+@include font(700, 14px, 1.143, 0.03em);
 text-align: center;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--main-color-dark-backgr);
 

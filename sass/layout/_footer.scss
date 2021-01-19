@@ -21,10 +21,7 @@
 
 
 .address-footer-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
+    @include font(400, 14px, 1.714, 0.03em);
     color: var(--addres-second-color);
 }
 
@@ -37,11 +34,8 @@
 }
 
 .social-list-invitation  {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
+    @include font(700, 14px, 1.142, 0.03em);
     text-transform: uppercase;
-    letter-spacing: 0.03em;
     color: var(--main-color-dark-backgr);
     margin-bottom: 20px;
 }
@@ -64,10 +58,8 @@
 
 .subscription-form-title {
     width:100%;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
+
+    @include font(700, 14px, 1.143, 0.03em);
     text-transform: uppercase;
     color: var(--main-color-dark-backgr);
     margin-bottom: 20px;
@@ -81,10 +73,7 @@
     background: transparent;
     padding-left: 16px;
     &::placeholder {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.03em;
+        @include font(400, 16px, 1.25, 0.03em);
         color: rgba(255, 255, 255, 0.6);
     }
 }
