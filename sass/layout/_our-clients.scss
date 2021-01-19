@@ -51,35 +51,18 @@
         fill: var(--accent-color);
     }
 }
-
-.first-client-icon {
-    width: 44.27px;
-    height: 49.23px;
-}
-
-.second-client-icon {
-    width: 40px;
-    height: 52px;
-}
-
-.third-client-icon {
-    width: 41px;
-    height: 42.6px;
-}
-
-.fourth-client-icon {
-    width: 79.66px;
-    height: 42.02px;
-}
-
-.fifth-client-icon {
-    width: 59px;
-    height: 47px;
-}
-
-.sixth-client-icon {
-    width: 88.48px;
-    height: 45.44px;
+//Цикл для підбору розмірів логотипів клієнтів
+@each $client-number, $width-icon, $height-icon in
+    (first, 44.27px, 49.23px),
+    (second, 40px, 52px),
+    (third, 41px, 42.6px),
+    (fourth, 79.66px, 42.02px),
+    (fifth, 59px, 47px),
+    (sixth, 88.48px, 45.44px) {
+        .#{$client-number}-client-icon {
+            width: #{$width-icon};
+            height: #{$height-icon};
+        }
 }
 
 /* ============== OUR CLIENTS END ============== */
