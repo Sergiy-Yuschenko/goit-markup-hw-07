@@ -459,6 +459,7 @@ img {
 }
 
 .social-list-our-projekt {
+  margin-top: 12px;
   margin-left: 70px;
 }
 
@@ -482,6 +483,7 @@ img {
 
 .subscription-form {
   width: 570px;
+  margin-top: 12px;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
